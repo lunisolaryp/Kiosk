@@ -95,9 +95,6 @@
     </div>
 </div>
 
-<script>
-
-</script>
 
 
 <script>
@@ -132,7 +129,7 @@ $(document).ready(function (){
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Add to cart</a></div>
+                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addCart(${menu})">Add to cart</button>
                         </div>
                     </div>
                 </div>`
@@ -141,17 +138,18 @@ $(document).ready(function (){
     })
 })
 
-$(document).ready(function (){
-    // e.stopPropagation()
-    // e.preventDefault()
-    const myModal = new bootstrap.Modal(document.querySelector('#exampleModal')) // relatedTarget?? ***복습
 
-    $("#btn").on("click",function (e){
-        const what = $(".modal-body").html("<img src='img/s1.jpg'/>")
-        console.log(what)
-        myModal.show()
-    })
-})
+// $(document).ready(function (){
+//     // e.stopPropagation()
+//     // e.preventDefault()
+//     const myModal = new bootstrap.Modal(document.querySelector('#exampleModal')) // relatedTarget?? ***복습
+//
+//     $("#detailBtn").on("click",function (e){
+//         $(".modal-body").html("<img src='img/s1.jpg'/>")
+//
+//         myModal.show()
+//     })
+// })
 
 
 
